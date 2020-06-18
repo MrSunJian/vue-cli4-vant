@@ -14,11 +14,13 @@ import './JS/plugin'
 import './JS/FastClick'
 import filters from './JS/filter'
 import utils from './JS/utils'
+import vconsole from './JS/vconsole'
 import VueScroller from 'vue-scroller'
 import { get, post } from './JS/ajax'
 
 Vue.use(VueScroller)
 Vue.use(utils)
+Vue.use(vconsole) // 初始化vconsole插件
 
 Vue.prototype.$dialog = Dialog
 Vue.prototype.$loading = Loading
